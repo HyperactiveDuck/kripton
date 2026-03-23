@@ -36,9 +36,9 @@ def cli():
               show_default=True, help="Hedera network.")
 def store(file_path, password, mode, chunk_size, manifest, network):
     """Compress, encrypt, and upload a file to Hedera File Service."""
-    click.echo(f"\n📂  File:       {file_path}")
-    click.echo(f"🔧  Mode:       {mode}  |  chunk size: {chunk_size}")
-    click.echo(f"🌐  Network:    {network}\n")
+    click.echo(f"\n  File:       {file_path}")
+    click.echo(f"  Mode:       {mode}  |  chunk size: {chunk_size}")
+    click.echo(f"  Network:    {network}\n")
 
     manifest_path = store_file(
         file_path=file_path,
@@ -73,7 +73,7 @@ def fetch(manifest_path, password, out, network):
         output_path=out,
         network=network,
     )
-    click.echo(f"\n✅  Reconstructed file saved to: {output_path}\n")
+    click.echo(f"\n  Reconstructed file saved to: {output_path}\n")
 
 
 # ── INFO ───────────────────────────────────────────────────────────────────────

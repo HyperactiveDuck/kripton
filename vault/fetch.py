@@ -57,7 +57,7 @@ def fetch_file(
         else:
             label = f"bytes {chunk['byte_start']:,}–{chunk['byte_end']:,}"
 
-        click.echo(f"📥  Chunk {idx}/{len(chunks)}  ({label})")
+        click.echo(f"  Chunk {idx}/{len(chunks)}  ({label})")
         click.echo(f"    Downloading  FileId: {file_id} ...")
 
         encrypted = download_bytes(file_id, network=net)
@@ -98,6 +98,6 @@ def fetch_file(
             for chunk_bytes in ordered:
                 f.write(chunk_bytes)
 
-    click.echo(f"\n✅  Reassembled {len(ordered)} chunk(s) → {output_path}")
+    click.echo(f"\n  Reassembled {len(ordered)} chunk(s) → {output_path}")
     return output_path
 

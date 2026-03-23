@@ -84,7 +84,7 @@ python cli.py info my_document.manifest.json
 | KDF iterations | 600,000 (NIST SP 800-132) |
 | Salt | 16 bytes random, unique per chunk |
 | IV/Nonce | 12 bytes random, unique per chunk |
-| Authenticated | ✅ GCM tag detects tampering |
+| Authenticated |  GCM tag detects tampering |
 
 The manifest contains **no keys** and **no plaintext** — only Hedera FileIds  
 and page metadata. Losing the manifest or forgetting the password means the  
