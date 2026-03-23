@@ -61,7 +61,7 @@ kripton/
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/kripton.git
+git clone https://github.com/HyperactiveDuck/kripton
 cd kripton
 python -m venv .venv
 source .venv/bin/activate
