@@ -1,3 +1,5 @@
+# Work in progress, You files will infact get lost, break etc. A lot of planned security, storage and compression logic is missing atm. Just a working demo.
+
 # 🔐 Kripton (HashVault)
 
 **Split, compress, encrypt, and store any file on the Hedera Hashgraph network.**
